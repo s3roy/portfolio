@@ -1,3 +1,73 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "airbnb"
+  ],
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "func-style": ["error", "expression"],
+    "max-len": ["error", { "code": 100 }],
+    "no-magic-numbers": ["error", { "ignoreArrayIndexes": true }],
+    "max-lines-per-function": ["error", { "max": 50 }],
+    "space-before-function-paren": [
+      "error",
+      { "anonymous": "never", "named": "never", "asyncArrow": "always" }
+    ],
+    "function-call-argument-newline": ["error", "consistent"],
+    "padded-blocks": ["error", "never"],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
+    "object-curly-spacing": ["error", "always"],
+    "one-var": ["error", "never"],
+    "quote-props": ["error", "as-needed"],
+    "react/prop-types": ["error"],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "react/react-in-jsx-scope": ["error"],
+    "react/jsx-no-literals": ["error"],
+    "react/jsx-one-expression-per-line": ["error"],
+    "react/jsx-max-depth": ["error", { "max": 5 }],
+    "react/jsx-newline": [
+      "error",
+      {
+        "prevent": "always",
+        "allowMultiline": true
+      }
+    ],
+    "react/jsx-props-no-spreading": ["error", { "custom": "ignore" }],
+    "react/jsx-max-props-per-line": ["error", { "maximum": 1 }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "ignorePatterns": ["node_modules/", ".next/"]
 }
