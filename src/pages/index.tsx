@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import AnimatedText from '@/components/AnimatedText';
-import Layouts from '@/components/Layouts';
+import { LinkArrow } from '@/components/Icons';
+import Layout from '@/components/Layout';
 
 import profilePic from '../../public/images/profile/developer-pic-1.png';
 
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main className="flex items-center text-dark w-full min-h-screen">
-        <Layouts className="pt-0">
+        <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
               <Image
@@ -37,14 +38,27 @@ export default function Home() {
                 web development.
               </p>
               <div className="flex items-center self-start mt-2">
-                <Link href="/dummy.pdf" target={'_blank'}>
+                <Link
+                  href="/dummy.pdf"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold 
+                            hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  target={'_blank'}
+                  download={true}
+                >
                   Resume
+                  <LinkArrow className={'w-6 ml-1'} />
                 </Link>
-                <Link href="mailto:souvikroy1999ab@gmail.com">Contact</Link>
+                <Link
+                  href="mailto:souvikroy1999ab@gmail.com"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                  target={'_blank'}
+                >
+                  Contact
+                </Link>
               </div>
             </div>
           </div>
-        </Layouts>
+        </Layout>
       </main>
     </>
   );

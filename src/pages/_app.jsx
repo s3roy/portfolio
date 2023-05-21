@@ -3,7 +3,7 @@ import '@/styles/globals.css';
 import { Montserrat } from 'next/font/google';
 import Head from 'next/head';
 
-import Logo from '@/components/Logo'; // Import the Logo component
+import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 
 const montserrat = Montserrat({
@@ -23,6 +23,7 @@ export default function App({ Component, pageProps }) {
       >
         <NavBar />
         <Component {...pageProps} />
+        <Footer />
       </main>
     </>
   );
