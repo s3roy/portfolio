@@ -21,7 +21,7 @@ const CustomLink = ({ href, title, className = '' }) => {
         className={`h-[1px] inline-block w-full 
                   bg-dark absolute left-0 -bottom-0.5 
                   group-hover:w-full transition-[width] ease duration-300
-                ${router.asPath === href ? ' w-full' : ' w-0'}`}
+                  ${router.asPath === href ? ' w-full' : ' w-0'}`}
       >
         &nbsp;
       </span>
@@ -48,7 +48,7 @@ const NavBar = () => {
           className="w-6 mx-3"
           whileHover={{ y: -2 }}
         >
-          <TwitterIcon className={undefined} />
+          <TwitterIcon className={''} />
         </motion.a>
         <motion.a
           href="https://twitter.com"
@@ -57,7 +57,7 @@ const NavBar = () => {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <GithubIcon className={undefined} />
+          <GithubIcon className={''} />
         </motion.a>
         <motion.a
           href="https://twitter.com"
@@ -66,7 +66,7 @@ const NavBar = () => {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <LinkedInIcon className={undefined} />
+          <LinkedInIcon className={''} />
         </motion.a>
         <motion.a
           href="https://twitter.com"
@@ -75,7 +75,7 @@ const NavBar = () => {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <PinterestIcon className={undefined} />
+          <PinterestIcon className={''} />
         </motion.a>
         <motion.a
           href="https://twitter.com"
@@ -84,7 +84,7 @@ const NavBar = () => {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <DribbbleIcon className={undefined} />
+          <DribbbleIcon className={''} />
         </motion.a>
       </nav>
 
