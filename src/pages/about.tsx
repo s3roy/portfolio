@@ -5,8 +5,10 @@ import React, { useEffect, useRef } from 'react';
 
 import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout';
+import Skills from '@/components/Skills';
 
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
+import Experience from '@/components/Experience';
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef<HTMLSpanElement>(null);
@@ -103,6 +105,8 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Skills />
+          <Experience />
         </Layout>
       </main>
     </>
