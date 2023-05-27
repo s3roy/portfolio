@@ -4,11 +4,12 @@ import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 
 import AnimatedText from '@/components/AnimatedText';
+import Education from '@/components/Education';
+import Experience from '@/components/Experience';
 import Layout from '@/components/Layout';
 import Skills from '@/components/Skills';
 
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
-import Experience from '@/components/Experience';
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef<HTMLSpanElement>(null);
@@ -107,6 +108,7 @@ const about = () => {
           </div>
           <Skills />
           <Experience />
+          <Education />
         </Layout>
       </main>
     </>
