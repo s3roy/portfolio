@@ -129,13 +129,13 @@ const articles = () => {
             All Articles
           </h2>
           <ul>
-            <Article image={''} title={''} date={''} link={''} />
-            <Article image={''} title={''} date={''} link={''} />
-            <Article image={''} title={''} date={''} link={''} />
-            <Article image={''} title={''} date={''} link={''} />
-            <Article image={''} title={''} date={''} link={''} />
-            <Article image={''} title={''} date={''} link={''} />
-            <Article image={''} title={''} date={''} link={''} />
+            <Article img={''} title={''} date={''} link={''} />
+            <Article img={''} title={''} date={''} link={''} />
+            <Article img={''} title={''} date={''} link={''} />
+            <Article img={''} title={''} date={''} link={''} />
+            <Article img={''} title={''} date={''} link={''} />
+            <Article img={''} title={''} date={''} link={''} />
+            <Article img={''} title={''} date={''} link={''} />
           </ul>
         </Layout>
       </main>
