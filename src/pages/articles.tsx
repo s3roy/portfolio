@@ -6,6 +6,7 @@ import React, { useRef } from 'react';
 
 import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -107,6 +108,7 @@ const articles = () => {
         <title>Articles Page</title>
         <meta name="description" content="my description" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

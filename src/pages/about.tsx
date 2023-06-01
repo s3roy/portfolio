@@ -9,6 +9,7 @@ import Education from '@/components/Education';
 import Experience from '@/components/Experience';
 import Layout from '@/components/Layout';
 import Skills from '@/components/Skills';
+import TransitionEffect from '@/components/TransitionEffect';
 
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 
@@ -42,6 +43,7 @@ const about = () => {
         <title>About Page</title>
         <meta name="description" content="my description" />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="p-16">
           <AnimatedText
