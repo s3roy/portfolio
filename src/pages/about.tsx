@@ -11,7 +11,7 @@ import Layout from '@/components/Layout';
 import Skills from '@/components/Skills';
 import TransitionEffect from '@/components/TransitionEffect';
 
-import profilePic from '../../public/images/profile/developer-pic-2.jpg';
+import profilePic from '../../public/images/profile/avatar-01.png';
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef<HTMLSpanElement>(null);
