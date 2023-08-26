@@ -45,7 +45,7 @@ const about = () => {
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout className="p-16">
+        <Layout className="p-16 pt-2">
           <AnimatedText
             text="Passion Fuels Purpose!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
@@ -70,16 +70,6 @@ const about = () => {
                 to my commitment to delivering robust, efficient, and
                 user-centric solutions.
               </p>
-              <p className="font-medium">
-                For me, development isn't just about individual pieces of
-                technology. It's about weaving them together to create a
-                cohesive, intuitive, and impactful user experience. It's about
-                understanding the broader picture, from the user interface down
-                to the underlying databases. When I'm not deep in code, I'm
-                often navigating the latest tech innovations or exploring the
-                intricate realms of cryptocurrency.
-              </p>
-
               <p className="font-medium">
                 If you're in search of a developer who understands both the
                 forest and the trees, let's embark on a digital journey
@@ -120,7 +110,7 @@ const about = () => {
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   {' '}
-                  <AnimatedNumbers value={4} />+
+                  <AnimatedNumbers value={2} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   years of experience
