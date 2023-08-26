@@ -56,23 +56,34 @@ const about = () => {
                 About Me
               </h2>
               <p className="font-medium">
-                Hi, I'm CodeBucks, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients' visions to life.
+                Hello! I'm Souvik Roy, a dedicated Full Stack Developer with a
+                passion for creating end-to-end digital solutions. My toolkit
+                spans a broad spectrum of technologies, from frontend
+                intricacies with JavaScript, React, and CSS to backend prowess
+                with Node.js and SQL.
               </p>
               <p className="font-medium my-4">
-                I believe that design is about more than just making things look
-                pretty – it's about solving problems and creating intuitive,
-                enjoyable experiences for users.
+                Throughout my professional journey, I've collaborated with
+                diverse teams, architecting scalable applications, enhancing
+                user experiences, and ensuring seamless integration between
+                frontend and backend systems. Each project has been a testament
+                to my commitment to delivering robust, efficient, and
+                user-centric solutions.
               </p>
               <p className="font-medium">
-                Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                For me, development isn't just about individual pieces of
+                technology. It's about weaving them together to create a
+                cohesive, intuitive, and impactful user experience. It's about
+                understanding the broader picture, from the user interface down
+                to the underlying databases. When I'm not deep in code, I'm
+                often navigating the latest tech innovations or exploring the
+                intricate realms of cryptocurrency.
+              </p>
+
+              <p className="font-medium">
+                If you're in search of a developer who understands both the
+                forest and the trees, let's embark on a digital journey
+                together!
               </p>
             </div>
             <div
