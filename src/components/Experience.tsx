@@ -77,7 +77,8 @@ const Experience = () => {
             companyLink={''}
             time={'July,2022-March,2023'}
             address={'Pune,India'}
-            work={`Designed a Node.js-based CLI tool, integrating MySQL, Axios, Yargs, and Console.Table to retrieve and display user
+            work={[
+              `Designed a Node.js-based CLI tool, integrating MySQL, Axios, Yargs, and Console.Table to retrieve and display user
 metrics, enhancing system integration insights.
 Launched a real-time Slack bot via the Slack API, driving a 20% error reduction and optimizing productivity by 8%
 through immediate error messages and login alerts.
@@ -88,7 +89,8 @@ Decreased database errors by 80% and reduced database calls by 43% by implementi
 and efficient data management.
 Developed a user-centric REST API with Spring Boot and PostgreSQL for consistent user data management and
 designed an intuitive admin interface using Next.js, React, and Chakra UI for enhanced user navigation and experience.
-Optimized data lookup by introducing an infinite scroll feature, leading to a 20% speed-up in user search activities.`}
+Optimized data lookup by introducing an infinite scroll feature, leading to a 20% speed-up in user search activities.`,
+            ]}
           />
         </ul>
       </div>
