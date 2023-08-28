@@ -29,7 +29,13 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full d:text-sm">{work}</p>
+        <p className="font-medium w-full d:text-sm">
+          <ul>
+            {work.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </p>
       </motion.div>
     </li>
   );
@@ -59,12 +65,11 @@ const Experience = () => {
             companyLink={''}
             time={'April,2023-Present'}
             address={'Pune,India'}
-            work={`Designed and maintained a robust Next.js application for the company's internal dashboard, leveraging React Hooks and
-Redux toolkit for state management, enhancing data accessibility, and improving decision-making processes.
-Leveraged Tailwind CSS and Material UI to create a responsive and user-friendly interface, adhering to modern design
-principles and increasing user engagement by 20%.
-Constructed an internal chat application for customer support, improving response times by 30% and boosting customer
-satisfaction by 15%.`}
+            work={[
+              'Designed and maintained a robust Next.js application for the company internal dashboard, leveraging React Hooks and Redux toolkit for state management, enhancing data accessibility, and improving decision-making processes.',
+              'Leveraged Tailwind CSS and Material UI to create a responsive and user-friendly interface, adhering to modern design principles and increasing user engagement by 20%.',
+              'Constructed an internal chat application for customer support, improving response times by 30% and boosting customer satisfaction by 15%.',
+            ]}
           />
           <Details
             position={'Product Solution Engineer'}
