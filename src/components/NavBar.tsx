@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 import {
-  DribbbleIcon,
+  YoutubeIcon,
   GithubIcon,
   LinkedInIcon,
   MoonIcon,
@@ -95,7 +95,8 @@ const NavBar = () => {
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
-          <CustomLink href="/articles" title="Articles" className="ml-4" />
+          <CustomLink href="/articles" title="Articles" className="mx-4" />
+          <CustomLink href="/testimonial" title="Testimonials" className="ml-4"/>
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
@@ -134,13 +135,13 @@ const NavBar = () => {
             <PinterestIcon className={''} />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://youtube.com"
             target={'_blank'}
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <DribbbleIcon className={''} />
+            <YoutubeIcon className={''} />
           </motion.a>
           <button
             onClick={toggleTheme}
@@ -227,13 +228,13 @@ const NavBar = () => {
               <PinterestIcon className={''} />
             </motion.a>
             <motion.a
-              href="https://twitter.com"
+              href="https://youtube.com"
               target={'_blank'}
               className="w-6 mx-3 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
-              <DribbbleIcon className={''} />
+              <YoutubeIcon className={''} />
             </motion.a>
             <button
               onClick={toggleTheme}
