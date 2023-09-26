@@ -1,9 +1,8 @@
 import { motion, useScroll } from 'framer-motion';
 import React, { useRef } from 'react';
-
-import LiIcon from './LiIcon';
 import { DemandFarmExpList, OnatoExpList } from 'utils/experience';
 
+import LiIcon from './LiIcon';
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
@@ -31,18 +30,17 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full d:text-sm">
-          <ul>
-            {work.map((item, index) => (
-              <li key ={index}>{item}</li>
-            ))}
-          </ul>
-        </p>
+
+        <ul className="font-medium w-full d:text-sm">
+          {work.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
       </motion.div>
     </li>
   );
 };
-const Experience: React.FC= () => {
+const Experience: React.FC = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
