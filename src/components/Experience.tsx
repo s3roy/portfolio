@@ -34,7 +34,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <p className="font-medium w-full d:text-sm">
           <ul>
             {work.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key ={index}>{item}</li>
             ))}
           </ul>
         </p>
