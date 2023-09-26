@@ -33,7 +33,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
         <ul className="font-medium w-full d:text-sm">
           {work.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li className='list-disc pt-2 ' key={index}>{item}</li>
           ))}
         </ul>
       </motion.div>
